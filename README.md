@@ -105,27 +105,6 @@ done
 
 This prints Conda environments along with their Python versions.
 
----
-
-## **6️⃣ Setting Up Node.js & NVM**
-### **Check Node.js Version**
-```bash
-node -v
-```
-
-### **Install Node.js (If Missing)**
-```bash
-sudo apt update
-sudo apt install nodejs
-```
-
-### **Install & Use NVM for Node.js Version Management**
-```bash
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
-source ~/.bashrc
-nvm install 18
-nvm use 18
-```
 To **set `pyvenv_3.13` as your default Conda environment**, follow these steps:
 
 ### **1. Disable Auto-Activation of `base`**
@@ -189,3 +168,25 @@ conda create -n venv_3.12 python=3.12
 ```
 
 Let me know if you need help configuring dependencies or optimizing your setup! 🚀 You can also check out [Conda's official documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for more details.
+
+---
+
+## **6️⃣ Setting Up Node.js & NVM**
+### **Check Node.js Version**
+```bash
+node -v
+```
+
+### **Install Node.js (If Missing)**
+```bash
+sudo apt update
+sudo apt install nodejs
+```
+
+### **Install & Use NVM for Node.js Version Management**
+```bash
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+source ~/.bashrc
+nvm install 18
+nvm use 18
+```
