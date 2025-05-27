@@ -136,8 +136,15 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # ✨ BEGIN Vaibhav’s Custom Config ✨
-conda activate pyvenv_3.13
 
-echo "Available Conda Environments:"
-conda env list
-# 🔥 END Vaibhav’s Custom Config 🔥 
+function random_cow_message() {
+    case $((RANDOM % 4)) in
+        0) fortune ;;
+        1) echo "Node.js Version: $(node -v)" ;;
+        2) echo "npm Version: $(npm -v)" ;;
+        3) echo "Available Conda Environments:" && conda env list ;;
+    esac | cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1) | lolcat
+}
+
+random_cow_message
+# 🔥 END Vaibhav’s Custom Config 🔥
