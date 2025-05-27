@@ -146,5 +146,11 @@ function random_cow_message() {
     esac | cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1) | lolcat
 }
 
-random_cow_message
+# Randomly choose between cowsay message (~80%) and Neofetch (~20%)
+if [ $((RANDOM % 10)) -eq 9 ]; then
+    neofetch
+else
+    random_cow_message
+fi
+
 # 🔥 END Vaibhav’s Custom Config 🔥
