@@ -1,0 +1,10 @@
+cd ~/.bashrc_backup
+cp ~/.bashrc ~/.bashrc_backup
+git diff
+git commit -am "Updated .bashrc with Conda activation"
+
+
+Manually Added section for better organization, readability, or personalization
+# ✨ BEGIN Vaibhav’s Custom Config ✨
+conda activate pyvenv_3.13
+# 🔥 END Vaibhav’s Custom Config 🔥
