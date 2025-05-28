@@ -5,7 +5,7 @@
 cd ~/terminal-setup 
 cp ~/.bashrc ~/terminal-setup
 # VS Code Settings - /C:/Users/vaibh/AppData/Roaming/Code/User/settings.json
-cp /mnt/c/users/vaibh/AppData/Roaming/Code/User/settings.json ~/terminal-setup/windows_terminal_settings.json
+cp /mnt/c/users/vaibh/AppData/Roaming/Code/User/settings.json ~/terminal-setup/vscode_settings.json
 # Windows Terminal Settings - C:\Users\vaibh\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 cp /mnt/c/users/vaibh/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json ~/terminal-setup/windows_terminal_settings.json
 cp /home/deokar/.config/oh-my-posh/my-custom-theme.json ~/terminal-setup/oh-my-posh/my-custom-theme.json

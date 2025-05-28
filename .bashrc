@@ -151,9 +151,6 @@ if command -v conda &> /dev/null; then
     conda activate pyvenv_3.13  # Default environment set to pyvenv_3.13
 fi
 
-# 🎨 Load Oh My Posh for prompt styling
-eval "$(oh-my-posh init bash)"
-
 # 🐮 Fun startup message (random cowsay or Neofetch)
 # Reduce Neofetch probability (~10%) while ensuring something runs
 if [ $((RANDOM % 10)) -eq 9 ]; then
@@ -161,5 +158,10 @@ if [ $((RANDOM % 10)) -eq 9 ]; then
 else
     random_cow_message
 fi
+
+# 🎨 Load Oh My Posh for prompt styling
+export PATH=$PATH:/home/deokar/.local/bin
+# eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
 
 # 🔥 END Vaibhav’s Custom Config 🔥
