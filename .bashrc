@@ -162,6 +162,7 @@ fi
 # 🎨 Load Oh My Posh for prompt styling
 export PATH=$PATH:/home/deokar/.local/bin
 # eval "$(oh-my-posh init bash)"
-eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
+# eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
+eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/my-custom-theme.json')"
 
 # 🔥 END Vaibhav’s Custom Config 🔥
