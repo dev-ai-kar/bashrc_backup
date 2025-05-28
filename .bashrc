@@ -165,4 +165,6 @@ export PATH=$PATH:/home/deokar/.local/bin
 # eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
 eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/my-custom-theme.json')"
 
+export LS_COLORS="di=92"
+
 # 🔥 END Vaibhav’s Custom Config 🔥
