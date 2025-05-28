@@ -146,7 +146,16 @@ function random_cow_message() {
     esac | cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1) | lolcat
 }
 
-# Randomly choose between cowsay message (~80%) and Neofetch (~20%)
+# 🛠 Initialize Conda first
+if command -v conda &> /dev/null; then
+    conda activate pyvenv_3.13  # Default environment set to pyvenv_3.13
+fi
+
+# 🎨 Load Oh My Posh for prompt styling
+eval "$(oh-my-posh init bash)"
+
+# 🐮 Fun startup message (random cowsay or Neofetch)
+# Reduce Neofetch probability (~10%) while ensuring something runs
 if [ $((RANDOM % 10)) -eq 9 ]; then
     neofetch
 else

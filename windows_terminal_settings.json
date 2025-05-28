@@ -4,7 +4,7 @@
     "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{c7e6b225-1dea-5804-a90b-8533190d6162}",
     "keybindings": 
     [
         {
@@ -12,12 +12,12 @@
             "keys": "ctrl+c"
         },
         {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
+            "id": "Terminal.FindText",
+            "keys": "ctrl+f"
         },
         {
-            "id": "Terminal.FindText",
-            "keys": "ctrl+shift+f"
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
         },
         {
             "id": "Terminal.DuplicatePaneAuto",
@@ -32,7 +32,13 @@
     ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "Cascadia Code NF"
+            }
+        },
         "list": 
         [
             {
@@ -54,10 +60,16 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "font": 
+                {
+                    "face": "Cascadia Code NF"
+                },
                 "guid": "{c7e6b225-1dea-5804-a90b-8533190d6162}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "source": "Microsoft.WSL"
+                "opacity": 50,
+                "source": "Microsoft.WSL",
+                "useAcrylic": true
             },
             {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
@@ -76,6 +88,12 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },

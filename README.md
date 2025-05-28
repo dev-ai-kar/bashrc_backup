@@ -1,9 +1,14 @@
-# 🚀 **`.bashrc_backup` Management & Git Workflow**
+# 🚀 **`terminal-setup` Management & Git Workflow**
 
 ### **1️⃣ Backup & Version Control**
 ```bash
-cd ~/.bashrc_backup
-cp ~/.bashrc ~/.bashrc_backup
+cd ~/terminal-setup 
+cp ~/.bashrc ~/terminal-setup
+# VS Code Settings - /C:/Users/vaibh/AppData/Roaming/Code/User/settings.json
+cp /mnt/c/users/vaibh/AppData/Roaming/Code/User/settings.json ~/terminal-setup/windows_terminal_settings.json
+# Windows Terminal Settings - C:\Users\vaibh\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+cp /mnt/c/users/vaibh/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json ~/terminal-setup/windows_terminal_settings.json
+cp /home/deokar/.config/oh-my-posh/my-custom-theme.json ~/terminal-setup/oh-my-posh/my-custom-theme.json
 git diff
 git commit -am "Updated .bashrc with nvm activation"
 ```
@@ -46,7 +51,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 - Add the key to GitHub at: [GitHub SSH Keys](https://github.com/settings/keys)
 - Update Git remote:
   ```bash
-  git remote set-url origin git@github.com:yourusername/bashrc_backup.git
+  git remote set-url origin git@github.com:yourusername/terminal-setup.git
   ```
 - Pull/push **without needing credentials**:
   ```bash
@@ -58,8 +63,8 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 - Generate a token: [GitHub Tokens](https://github.com/settings/tokens)
 - Use it instead of a password:
   ```bash
-  git pull https://github.com/yourusername/bashrc_backup.git
-  git push https://github.com/yourusername/bashrc_backup.git
+  git pull https://github.com/yourusername/terminal-setup.git
+  git push https://github.com/yourusername/terminal-setup.git
   ```
 
 📌 **SSH is recommended** for security and automation.
