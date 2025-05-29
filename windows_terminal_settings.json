@@ -42,22 +42,14 @@
         "list": 
         [
             {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "colorScheme": "Frost",
+                "cursorColor": "#000000",
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "name": "PowerShell",
+                "opacity": 30,
+                "source": "Windows.Terminal.PowershellCore",
+                "useAcrylic": true
             },
             {
                 "font": 
@@ -67,9 +59,42 @@
                 "guid": "{c7e6b225-1dea-5804-a90b-8533190d6162}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "opacity": 50,
+                "opacity": 75,
                 "source": "Microsoft.WSL",
                 "useAcrylic": true
+            },
+            {
+                "colorScheme": "Campbell Powershell",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell",
+                "opacity": 75,
+                "useAcrylic": true
+            },
+            {
+                "closeOnExit": "graceful",
+                "colorScheme": "Retro",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "filledBox",
+                "experimental.retroTerminalEffect": true,
+                "font": 
+                {
+                    "face": "PxPlus IBM VGA8",
+                    "size": 16
+                },
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt",
+                "padding": "5, 5, 5, 5",
+                "tabTitle": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
             },
             {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
@@ -88,15 +113,58 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
-    "schemes": [],
-    "themes": []
+    "schemes": 
+    [
+        {
+            "background": "#FFFFFF",
+            "black": "#3C5712",
+            "blue": "#17B2FF",
+            "brightBlack": "#749B36",
+            "brightBlue": "#27B2F6",
+            "brightCyan": "#13A8C0",
+            "brightGreen": "#89AF50",
+            "brightPurple": "#F2A20A",
+            "brightRed": "#F49B36",
+            "brightWhite": "#741274",
+            "brightYellow": "#991070",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3C96A6",
+            "foreground": "#000000",
+            "green": "#6AAE08",
+            "name": "Frost",
+            "purple": "#991070",
+            "red": "#8D0C0C",
+            "selectionBackground": "#FFFFFF",
+            "white": "#6E386E",
+            "yellow": "#991070"
+        },
+        {
+            "background": "#000000",
+            "black": "#00FF00",
+            "blue": "#00FF00",
+            "brightBlack": "#00FF00",
+            "brightBlue": "#00FF00",
+            "brightCyan": "#00FF00",
+            "brightGreen": "#00FF00",
+            "brightPurple": "#00FF00",
+            "brightRed": "#00FF00",
+            "brightWhite": "#00FF00",
+            "brightYellow": "#00FF00",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#00FF00",
+            "foreground": "#00FF00",
+            "green": "#00FF00",
+            "name": "Retro",
+            "purple": "#00FF00",
+            "red": "#00FF00",
+            "selectionBackground": "#FFFFFF",
+            "white": "#00FF00",
+            "yellow": "#00FF00"
+        }
+    ],
+    "themes": [],
+    "useAcrylicInTabRow": true
 }

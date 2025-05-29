@@ -165,6 +165,10 @@ export PATH=$PATH:/home/deokar/.local/bin
 # eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
 eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/my-custom-theme.json')"
 
-export LS_COLORS="di=92"
+export LS_COLORS="di=1;35"
+
+# 🚨 Uses `logo-ls` for file icons, but flags like -C -F won't work!  
+# 🔗 Official release: https://github.com/Yash-Handa/logo-ls/releases/tag/v1.3.7
+alias ls='logo-ls'
 
 # 🔥 END Vaibhav’s Custom Config 🔥
