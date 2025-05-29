@@ -8,7 +8,7 @@ cp ~/.bashrc ~/terminal-setup
 cp /mnt/c/users/vaibh/AppData/Roaming/Code/User/settings.json ~/terminal-setup/vscode_settings.json
 # Windows Terminal Settings - C:\Users\vaibh\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 cp /mnt/c/users/vaibh/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json ~/terminal-setup/windows_terminal_settings.json
-cp /home/deokar/.config/oh-my-posh/my-custom-theme.json ~/terminal-setup/oh-my-posh/my-custom-theme.json
+cp -r /home/deokar/.config/oh-my-posh/ ~/terminal-setup/
 git diff
 git commit -am "Updated .bashrc with nvm activation"
 ```
