@@ -140,8 +140,8 @@ unset __conda_setup
 function random_cow_message() {
     case $((RANDOM % 4)) in
         0) fortune ;;
-        1) echo "Node.js Version: $(node -v)" ;;
-        2) echo "npm Version: $(npm -v)" ;;
+        1) echo "Node.js: $(node -v)" ;;
+        2) echo "npm: v$(npm -v)" ;;
         3) echo "Available Conda Environments:" && conda env list ;;
     esac | cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1) | lolcat
 }
@@ -163,12 +163,18 @@ fi
 export PATH=$PATH:/home/deokar/.local/bin
 # eval "$(oh-my-posh init bash)"
 # eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
-eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/my-custom-theme.json')"
+# eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/my-custom-theme.json')"
+eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/dracula/p10k-oh-my-posh/refs/heads/main/powerlevel10k_dracula.omp.json')"
+# eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/dracula/oh-my-posh/refs/heads/master/dracula.omp.json')"
 
 export LS_COLORS="di=1;35"
 
 # 🚨 Uses `logo-ls` for file icons, but flags like -C -F won't work!  
 # 🔗 Official release: https://github.com/Yash-Handa/logo-ls/releases/tag/v1.3.7
-alias ls='logo-ls'
+# alias ls='logo-ls'
+# alias ll='ls -al'
+# alias la='ls -a'
+# alias l='ls'
+alias cls='clear'
 
 # 🔥 END Vaibhav’s Custom Config 🔥
