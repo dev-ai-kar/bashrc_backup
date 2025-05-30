@@ -142,7 +142,7 @@ function random_cow_message() {
         0) fortune ;;
         1) echo "Node.js: $(node -v)" ;;
         2) echo "npm: v$(npm -v)" ;;
-        3) echo "Available Conda Environments:" && conda env list ;;
+        3) echo "Available Conda Environments:" && conda env list | tail -n +3 | awk '{print ($2 == "*") ?"<<" $1 ">>" : $1}';;
     esac | cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1) | lolcat
 }
 
