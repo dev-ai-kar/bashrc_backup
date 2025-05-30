@@ -148,7 +148,7 @@ function random_cow_message() {
 
 # 🛠 Initialize Conda first
 if command -v conda &> /dev/null; then
-    conda activate pyvenv_3.13  # Default environment set to pyvenv_3.13
+    conda activate CondUbxVenv  # Default environment set to pyvenv_3.13
 fi
 
 # 🐮 Fun startup message (random cowsay or Neofetch)
@@ -162,10 +162,11 @@ fi
 # 🎨 Load Oh My Posh for prompt styling
 export PATH=$PATH:/home/deokar/.local/bin
 # eval "$(oh-my-posh init bash)"
-# eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
 # eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/my-custom-theme.json')"
-eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/dracula/p10k-oh-my-posh/refs/heads/main/powerlevel10k_dracula.omp.json')"
+eval "$(oh-my-posh init bash --config '/home/deokar/.config/oh-my-posh/powerlevel10k_dracula.omp.json')"
+# eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')"
 # eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/dracula/oh-my-posh/refs/heads/master/dracula.omp.json')"
+# eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/dracula/p10k-oh-my-posh/refs/heads/main/powerlevel10k_dracula.omp.json')"
 
 export LS_COLORS="di=1;35"
 

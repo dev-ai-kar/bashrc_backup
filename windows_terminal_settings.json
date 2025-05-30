@@ -5,8 +5,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{c7e6b225-1dea-5804-a90b-8533190d6162}",
-    "keybindings": 
-    [
+    "keybindings": [
         {
             "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
@@ -24,23 +23,18 @@
             "keys": "alt+shift+d"
         }
     ],
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
-            "font": 
-            {
+    "profiles": {
+        "defaults": {
+            "font": {
                 "face": "Cascadia Code NF"
             }
         },
-        "list": 
-        [
+        "list": [
             {
                 "colorScheme": "Frost",
                 "cursorColor": "#000000",
@@ -52,8 +46,7 @@
                 "useAcrylic": true
             },
             {
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Code NF"
                 },
                 "guid": "{c7e6b225-1dea-5804-a90b-8533190d6162}",
@@ -79,8 +72,7 @@
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": true,
-                "font": 
-                {
+                "font": {
                     "face": "PxPlus IBM VGA8",
                     "size": 16
                 },
@@ -113,11 +105,22 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\vaibh\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\vaibh\\anaconda3' \"",
+                "name": "Anaconda PowerShell Prompt (anaconda3)",
+                "icon": "C:\\Users\\vaibh\\anaconda3\\Menu\\anaconda_powershell_prompt.ico",
+                "startingDirectory": "C:\\Users\\vaibh"
+            },
+            {
+                "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\vaibh\\anaconda3\\Scripts\\activate.bat C:\\Users\\vaibh\\anaconda3",
+                "name": "Anaconda Prompt (anaconda3)",
+                "icon": "C:\\Users\\vaibh\\anaconda3\\Menu\\anaconda_prompt.ico",
+                "startingDirectory": "C:\\Users\\vaibh"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#FFFFFF",
             "black": "#3C5712",
